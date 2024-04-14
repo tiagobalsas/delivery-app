@@ -1,4 +1,4 @@
-import { useLocalSearchParams, useNavigation } from "expo-router";
+import { Redirect, useLocalSearchParams, useNavigation } from "expo-router";
 import { Image, View, Text } from "react-native";
 import { Feather } from "@expo/vector-icons";
 
@@ -18,9 +18,15 @@ export default function Product() {
   const product = PRODUCTS.filter((item) => item.id === id)[0];
 
   function handleAddToCart() {
-    cartStore.add(product);
+    if (product) {
+      cartStore.add(product);
 
-    navigation.goBack();
+      navigation.goBack();
+    }
+  }
+
+  if (!product) {
+    return <Redirect href="/" />;
   }
 
   return (
