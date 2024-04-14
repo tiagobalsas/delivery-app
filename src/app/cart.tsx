@@ -8,6 +8,8 @@ import Header from "@/components/header";
 import Input from "@/components/input";
 import { Product } from "@/components/product";
 import { LinkButton } from "@/components/link-button";
+import { Button } from "@/components/button";
+import { Feather } from "@expo/vector-icons";
 
 export default function Cart() {
   const cartStore = useCartStore();
@@ -51,6 +53,16 @@ export default function Cart() {
           </ScrollView>
         </View>
       </KeyboardAwareScrollView>
+      <View className="p-5 gap-5">
+        <Button>
+          <Button.Text>Enviar pedido</Button.Text>
+          <Button.Icon>
+            <Feather name="arrow-right-circle" size={20} />
+          </Button.Icon>
+        </Button>
+
+        <LinkButton title="Voltar ao cardápio" href="/" />
+      </View>
     </View>
   );
 }
