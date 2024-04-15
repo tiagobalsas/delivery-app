@@ -4,9 +4,13 @@
 
 O "Delivery-App" é um aplicativo desenvolvido em React Native com Expo e TypeScript. Ele foi projetado para fornecer uma experiência de usuário suave e eficiente para pedidos de entrega.
 
-!Demonstração do Aplicativo
 
-<img src="src/assets/products/girf/delivery-app.gif">
+## Demonstração
+
+Aqui está uma rápida demonstração dos recursos do nosso aplicativo:
+
+
+<img src="src/assets/products/girf/delivery-app.gif" width="400" width="auto" />
 
 ## Tecnologias Utilizadas
 
