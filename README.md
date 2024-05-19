@@ -29,7 +29,7 @@ Aqui está uma rápida demonstração dos recursos do nosso aplicativo:
 
 1. Clone o repositório para a sua máquina local.
 2. Navegue até a pasta do projeto e execute `npm install` para instalar todas as dependências.
-3. Inicie o projeto executando `expo start`.
+3. Inicie o projeto executando `npx expo start`.
 
 ## Contribuições
 
